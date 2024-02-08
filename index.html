@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+
+</head>
+
+<body>
+
+    <div class="circulo"> </div>
+
+    <img src="./img/logo.png" alt="logo starbucks" class="logo">
+
+    <div class="conteudo">
+        <div class="texto">
+            <h2>Não é apenas um café colorido, é um <span>Starbucks</span></h2>
+            <p>Uma notícia boa, um lugar gostoso, um sorriso. Tudo isso é tão bom, né? É igual café. Um café quentinho,
+                forte e doce, é igualmente bom. Que a vida seja assim, tão gostosa quanto um café fresco do Starbucks.
+            </p>
+            <button>Peça já</button>
+        </div>
+        <div class="caixa-imagem">
+            <img src="./img/img2.png" alt="copo" class="starbucks">
+        </div>
+    </div>
+
+
+    <div class="menu">
+        <img src="./img/img-pequena2.png" class="copinho-pequeno rosa">
+        <img src="./img/img-pequena3.png" class="copinho-pequeno azul">
+        <img src="./img/img-pequena1.png" class="copinho-pequeno verde">
+    </div>
+</body>
+<script>
+    let circulo = document.querySelector(".circulo")
+    let imgCopo = document.querySelector(".starbucks")
+    let rosa = document.querySelector(".rosa")
+    let azul = document.querySelector(".azul")
+    let verde = document.querySelector(".verde")
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "./img/img2.png"
+        circulo.style.background = "#FFDAB9"
+    })
+
+    azul.addEventListener("click", () => {
+        imgCopo.src = "./img/img3.png"
+        circulo.style.background = "#FF1493"
+    })
+
+
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./img/img1.png"
+        circulo.style.background = "#008000"
+    })
+
+
+
+
+</script>
+
+</html>
